@@ -1,0 +1,53 @@
+#header_image1 {
+    padding: 30px;
+}
+body{
+    background-color: #ffef3b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #0C457A;
+}
+#heading1,#instructions,#heading2{
+    text-align: center;
+}
+
+#instructions{
+    font-size: x-large;
+}
+#kevinimg{
+    width: 130px;
+    height: 300px;
+    margin-left: 250px;
+}
+#stuartimg{
+    width: 260px;
+    height: 300px;
+    margin-left: 450px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: auto;
+    width: 100%;
+    text-align: center;
+}
+#button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0C457A;
+    color: #ffef3b;
+    font-size: x-large;
+}
+#KevinImage2,#StuartImage2{
+    height: 400px;
+}
+footer button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0C457A;
+    color: #ffef3b;
+    font-size:large;
+}

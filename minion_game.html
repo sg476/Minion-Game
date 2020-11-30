@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minion Game</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="minion_game.css" />
+    <link rel="icon" href="images/logo-clipart-minion-2.png" />
+</head>
+
+<body onload="startGame()">
+    <div class="col-4 col-xs-3 offset-4 offset-xs-3">
+        <label for="header_image">
+            <img name="header_image" id="header_image1" src="./images/logo-clipart-minion-2.png" />
+        </label>
+    </div>
+    <div>
+        <h1 class="display-3" name="welcomeHeading" id="heading1">Welcome To The Minion Game!!!</h1>
+    </div><br /> <br />
+    <div>
+        <h3 class="display-4" name="welcomeHeading" id="heading2">Be a Minion</h3>
+    </div>
+    <a>
+        <img src="./images/kevin.png" id="kevinimg" onclick="avatar('Kevin')" />
+        <img src="./images/pngguru.com (1).png" id="stuartimg" onclick="avatar('Stuart')" />
+        <h2 style="margin-left: 280px;">Kevin <span style="margin-left: 570px;">Stuart</span></h2>
+    </a>
+    <div id="instructionsDiv" hidden><br /> <br /><br /> <br />
+        <p id="instructions">
+            To Play This Game, You Need To Select The Radio Buttons. The Game Will Continue For 10 Rounds.<br />
+            You Can Also End The Game By Clicking On The End Game Button.
+        </p>
+    </div><br /> <br /><br />
+    <table id="table" hidden>
+        <tr>
+            <td id="kevinTD">
+                <img src="images/kevin2.png" alt="Kevin's Image" id="KevinImage2" />
+                <h3 id="kevinScore"></h3>
+            </td>
+            <td id="radioTD">
+                <div class="radio">
+                    <h4>1. <input type="radio" name="radioinput" onclick="radioValue(2)" /></h4><br />
+                    <h4>2. <input type="radio" name="radioinput" onclick="radioValue(4)" /></h4><br />
+                    <h4>3. <input type="radio" name="radioinput" onclick="radioValue(3)" /></h4><br />
+                    <h4>4. <input type="radio" name="radioinput" onclick="radioValue(6)" /></h4><br />
+                    <h4>5. <input type="radio" name="radioinput" onclick="radioValue(8)" /></h4><br />
+                    <h4>6. <input type="radio" name="radioinput" onclick="radioValue(1)" /></h4><br />
+                    <h4>7. <input type="radio" name="radioinput" onclick="radioValue(5)" /></h4><br />
+                    <h4>8. <input type="radio" name="radioinput" onclick="radioValue(0)" /></h4><br />
+                    <h4>9. <input type="radio" name="radioinput" onclick="radioValue(7)" /></h4><br />
+                    <h4>10. <input type="radio" name="radioinput" onclick="radioValue(9)" /></h4><br />
+                </div>
+            </td>
+            <td id="stuartTD">
+                <img src="images/Stuart2.png" alt="Stuart's Image" id="StuartImage2" />
+                <h3 id="stuartScore"></h3>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button type="button" id="button" onclick="calculate()">End Game</button>
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <audio id="player" src="./Minion.mp3" autoplay></audio>
+        <div>
+            <button onclick="document.getElementById('player').play()">Play</button>
+            <button onclick="document.getElementById('player').pause()">Pause</button>
+            <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+            <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+        </div>
+
+    </footer>
+
+    <script src="minion_game.js"></script>
+
+</body>
+
+</html>
